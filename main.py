@@ -1,6 +1,6 @@
 import pygame
 from planet import Planet
-from settings import WIN, WIDTH, HEIGHT, PLANETS
+from settings import UI, WIDTH, HEIGHT, PLANETS
 
 class PlanetSimulation:
     def __init__(self):
@@ -35,9 +35,9 @@ class PlanetSimulation:
             planet.update_position(self.planets)
     
     def draw(self):
-        WIN.fill((0, 0, 0))
+        UI.fill((0, 0, 0))
         for planet in self.planets:
-            planet.draw(WIN)
+            planet.draw(UI)
         pygame.display.update()
 
     def run_simulation(self):
