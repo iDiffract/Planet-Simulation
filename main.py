@@ -12,12 +12,12 @@ class PlanetSimulation:
         planets = []
         for planet_info in PLANETS:
             planet = Planet(
-                name=planet_info["name"],
-                x=planet_info["x"],
-                y=planet_info["y"],
-                radius=planet_info["radius"],
-                color=planet_info["color"],
-                mass=planet_info["mass"]
+                name = planet_info["name"],
+                x = planet_info["x"],
+                y = planet_info["y"],
+                radius = planet_info["radius"],
+                color = planet_info["color"],
+                mass = planet_info["mass"]
             )
             if planet_info.get("sun"):
                 planet.sun = True
